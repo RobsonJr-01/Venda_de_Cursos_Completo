@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background: #f5f5f0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main { flex: 1; }
+
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.logo:hover { text-decoration: none; }
+.logo-icon { font-size: 1.3rem; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-user {
+  font-size: .9rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.btn:hover { text-decoration: none; }
+
+.btn-primary { background: #2563eb; color: #fff; }
+.btn-primary:hover { background: #1d4ed8; color: #fff; }
+
+.btn-outline {
+  background: transparent;
+  color: #555;
+  border: 1px solid #d1d5db;
+}
+.btn-outline:hover { background: #f3f4f6; color: #1a1a1a; }
+
+.btn-sm { padding: 6px 14px; font-size: .85rem; }
+.btn-lg { padding: 11px 24px; font-size: 1rem; }
+.btn-block { width: 100%; text-align: center; }
+
+.hero {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 56px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.highlight { color: #2563eb; }
+
+.hero-text p {
+  color: #555;
+  font-size: .95rem;
+  max-width: 440px;
+  margin-bottom: 24px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.stat {
+  text-align: center;
+  padding: 16px 20px;
+  background: #f5f5f0;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.stat-num {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.stat-label {
+  display: block;
+  font-size: .72rem;
+  color: #888;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.section { padding: 52px 0; }
+
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.section-sub {
+  color: #777;
+  font-size: .9rem;
+  margin-bottom: 28px;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .2s;
+}
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+
+.card-emoji {
+  font-size: 2.4rem;
+  padding: 24px;
+  text-align: center;
+  background: #f9f9f7;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: .98rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #111;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: .81rem;
+  color: #777;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.card .btn-block { margin-top: 4px; }
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: .71rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.badge-iniciante     { background: #dcfce7; color: #166534; }
+.badge-intermediário { background: #fef9c3; color: #854d0e; }
+.badge-avançado      { background: #fee2e2; color: #991b1b; }
+.badge-cat           { background: #eff6ff; color: #1d4ed8; }
+
+.auth-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  padding: 40px 20px;
+}
+
+.auth-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-icon { font-size: 2rem; margin-bottom: 10px; }
+
+.auth-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.auth-sub {
+  color: #777;
+  font-size: .86rem;
+  margin-bottom: 22px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: .84rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-group input {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 13px;
+  font-family: 'Inter', sans-serif;
+  font-size: .9rem;
+  color: #111;
+  outline: none;
+  transition: border-color .15s;
+}
+.form-group input:focus { border-color: #2563eb; }
+.form-group input::placeholder { color: #bbb; }
+
+.alert {
+  padding: 10px 13px;
+  border-radius: 6px;
+  font-size: .86rem;
+  margin-bottom: 4px;
+}
+
+.alert-erro {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.auth-hint {
+  margin-top: 16px;
+  font-size: .8rem;
+  color: #aaa;
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  padding: 18px 0;
+  text-align: center;
+  color: #aaa;
+  font-size: .8rem;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-stats {
+    align-self: stretch;
+    justify-content: space-between;
+  }
+
+  .hero { padding: 36px 0; }
+
+  .grid-cards { grid-template-columns: 1fr; }
+
+  .auth-card { padding: 24px 18px; }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 { font-size: 1.5rem; }
+  .hero-stats { gap: 10px; }
+  .stat { padding: 12px 14px; }
+}
