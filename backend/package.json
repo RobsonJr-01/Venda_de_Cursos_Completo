@@ -1,0 +1,13 @@
+{
+  "name": "robson-cursos-backend",
+  "version": "1.0.0",
+  "description": "Backend do sistema de cursos online — Robson Cursos",
+  "main": "index.js",
+  "scripts": { 
+    "start": "node index.js",
+    "test": "node testes.js"
+  },
+  "dependencies": {
+    "mysql2": "^3.6.5"
+  }
+}
