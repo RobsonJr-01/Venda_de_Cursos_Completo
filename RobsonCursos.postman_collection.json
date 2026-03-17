@@ -1,0 +1,123 @@
+{
+  "info": {
+    "name": "Robson Cursos API",
+    "description": "Coleção de testes para a API REST do sistema Robson Cursos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Cursos",
+      "item": [
+        {
+          "name": "GET - Listar todos os cursos",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3001/cursos" }
+          }
+        },
+        {
+          "name": "GET - Buscar curso por ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3001/cursos/1" }
+          }
+        },
+        {
+          "name": "GET - Buscar por categoria",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3001/cursos/categoria/Programação" }
+          }
+        },
+        {
+          "name": "GET - Buscar por nível",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3001/cursos/nivel/Avançado" }
+          }
+        },
+        {
+          "name": "POST - Cadastrar novo curso",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:3001/cursos" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Flutter do Zero ao Avançado\",\n  \"descricao\": \"Aprenda a criar apps mobile com Flutter e Dart para iOS e Android.\",\n  \"dataInicio\": \"2025-06-01\",\n  \"duracao\": \"3 meses\",\n  \"cargaHoraria\": \"120 horas\",\n  \"nivel\": \"Intermediário\",\n  \"preco\": 899.90,\n  \"vagas\": 20,\n  \"categoria\": \"Mobile\",\n  \"imagem\": \"📱\",\n  \"instrutorId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT - Atualizar curso",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:3001/cursos/1" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Desenvolvimento Web Full Stack\",\n  \"descricao\": \"Aprenda a criar aplicações web completas do zero ao deploy.\",\n  \"dataInicio\": \"2025-02-10\",\n  \"duracao\": \"6 meses\",\n  \"cargaHoraria\": \"240 horas\",\n  \"nivel\": \"Iniciante\",\n  \"preco\": 1199.90,\n  \"vagas\": 35,\n  \"categoria\": \"Programação\",\n  \"imagem\": \"💻\",\n  \"instrutorId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE - Excluir curso",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:3001/cursos/7" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Instrutores",
+      "item": [
+        {
+          "name": "GET - Listar todos os instrutores",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3001/instrutores" }
+          }
+        },
+        {
+          "name": "GET - Buscar instrutor por ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3001/instrutores/1" }
+          }
+        },
+        {
+          "name": "POST - Cadastrar novo instrutor",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:3001/instrutores" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Lucas Ferreira\",\n  \"email\": \"lucas@robsoncursos.com.br\",\n  \"especialidade\": \"Desenvolvimento Mobile\",\n  \"bio\": \"Especialista em React Native e Flutter com 7 anos de experiência.\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT - Atualizar instrutor",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:3001/instrutores/1" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Carlos Eduardo Silva\",\n  \"email\": \"carlos@robsoncursos.com.br\",\n  \"especialidade\": \"Desenvolvimento Web Full Stack\",\n  \"bio\": \"Desenvolvedor full stack com 12 anos de experiência e certificação AWS.\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE - Excluir instrutor",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:3001/instrutores/7" }
+          }
+        }
+      ]
+    }
+  ]
+}

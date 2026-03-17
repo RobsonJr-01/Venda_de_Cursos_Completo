@@ -1,18 +1,16 @@
 {
-  "name": "cursos-online",
+  "name": "robson-cursos",
   "version": "1.0.0",
-  "description": "Site de Vendas de Cursos Online",
+  "description": "Sistema de vendas de cursos online — Robson Cursos",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "api":   "node api.js",
+    "test":  "node testes.js"
   },
   "dependencies": {
-    "express": "^4.22.1",
-    "express-session": "^1.17.3"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.6.5"
+  }
 }
