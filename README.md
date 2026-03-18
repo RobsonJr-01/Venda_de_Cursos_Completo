@@ -28,5 +28,5 @@ http://localhost:3001
 
 ## Realização dos testes da API
 
-Usando a extensão Thunder Client você consiguira fazer os testes, ultilizando os direcionamentos que estão disponiveis no navegador
+Usando o Postman você consiguira fazer os testes, ultilizando os direcionamentos que estão disponiveis no navegador
 
